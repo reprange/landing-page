@@ -3,318 +3,161 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rep Range - Your AI Fitness Coach</title>
+    <title>RepRange - Your AI Fitness Coach</title>
+    <meta name="description" content="Join the waitlist for RepRange, the AI-powered fitness coach that adapts to your progress." />
     <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@500;700;800&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
+    <div class="background-globes">
+      <div class="globe globe-1"></div>
+      <div class="globe globe-2"></div>
+      <div class="globe globe-3"></div>
+    </div>
+
     <!-- Navigation -->
     <nav class="navbar">
-      <div class="container">
-        <div class="nav-content">
-          <div class="logo">
-            <img src="logo.svg" alt="RepRange Logo" class="logo-img" />
-          </div>
-          <div class="nav-links">
-            <a href="#features">Features</a>
-            <a href="#how-it-works">How It Works</a>
-            <a href="#testimonials">Testimonials</a>
-            <a href="#pricing" class="nav-cta">Get Started</a>
-          </div>
-          <button class="mobile-menu-toggle" aria-label="Toggle menu">
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
+      <div class="container nav-content">
+        <a href="#" class="logo">
+          <img src="logo.svg" alt="RepRange Logo" class="logo-img" />
+        </a>
+        <div class="nav-links">
+          <a href="#features">Features</a>
+          <a href="#waitlist" class="btn btn-primary btn-sm">Join Waitlist</a>
         </div>
+        <button class="mobile-menu-toggle" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
       </div>
     </nav>
 
     <!-- Hero Section -->
     <section class="hero">
-      <div class="hero-background">
-        <div class="gradient-orb orb-1"></div>
-        <div class="gradient-orb orb-2"></div>
-        <div class="gradient-orb orb-3"></div>
-      </div>
-      <div class="container">
-        <div class="hero-content">
-          <div class="hero-badge fade-in-up">
-            <span class="badge-icon"
-              ><img src="icons/arm.svg" alt="Arm" class="icon-svg"
-            /></span>
-            <span>AI-Powered Fitness Coaching</span>
+      <div class="container hero-container">
+        <div class="hero-content fade-in-up">
+          <div class="badge">
+            <span class="badge-dot"></span>
+            <span>Coming Soon to iOS & Android</span>
           </div>
-          <h1 class="hero-title fade-in-up" style="animation-delay: 0.1s">
-            Your Personal AI<br />
-            <span class="gradient-text">Fitness Coach</span>
+          <h1 class="hero-title">
+            Your Personal AI <br />
+            <span class="gradient-text">Fitness Evolution</span>
           </h1>
-          <p class="hero-description fade-in-up" style="animation-delay: 0.2s">
-            Plan, track, and optimize your workouts with intelligent coaching
-            that adapts to your progress. Get personalized training plans,
-            real-time guidance, and data-driven insights.
+          <p class="hero-subtitle">
+            Stop guessing. Start progressing. RepRange builds intelligent, adaptive workout plans tailored to your unique physiology and goals.
           </p>
-          <div class="hero-cta fade-in-up" style="animation-delay: 0.3s">
-            <button class="btn btn-primary">Start Your Journey</button>
-            <button class="btn btn-secondary">Watch Demo</button>
-          </div>
-          <div class="hero-stats fade-in-up" style="animation-delay: 0.4s">
-            <div class="stat-item">
-              <div class="stat-number">50K+</div>
-              <div class="stat-label">Active Users</div>
+          
+          <form class="waitlist-form" id="waitlist-form">
+            <div class="input-group">
+              <input type="email" placeholder="Enter your email address" required aria-label="Email address" />
+              <button type="submit" class="btn btn-primary">
+                Join Early Access
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </button>
             </div>
-            <div class="stat-item">
-              <div class="stat-number">2M+</div>
-              <div class="stat-label">Workouts Completed</div>
+            <p class="form-note">Join 2,000+ others waiting for launch.</p>
+          </form>
+
+          <div class="hero-stats">
+            <div class="stat">
+              <span class="stat-value">100%</span>
+              <span class="stat-label">Personalized</span>
             </div>
-            <div class="stat-item">
-              <div class="stat-number">4.9★</div>
-              <div class="stat-label">App Rating</div>
+            <div class="divider"></div>
+            <div class="stat">
+              <span class="stat-value">AI</span>
+              <span class="stat-label">Powered</span>
+            </div>
+            <div class="divider"></div>
+            <div class="stat">
+              <span class="stat-value">24/7</span>
+              <span class="stat-label">Coaching</span>
             </div>
           </div>
         </div>
-        <div class="hero-visual fade-in-up" style="animation-delay: 0.5s">
-          <div class="phone-mockup">
-            <div class="phone-screen">
-              <div class="mockup-content">
-                <div class="mockup-header">
-                  <div class="mockup-dot"></div>
-                  <div class="mockup-dot"></div>
-                  <div class="mockup-dot"></div>
-                </div>
-                <div class="mockup-card">
-                  <div class="mockup-card-header">
-                    <div class="mockup-icon">
-                      <img src="icons/fire.svg" alt="Fire" class="icon-svg" />
-                    </div>
-                    <div>
-                      <div class="mockup-title">Today's Progress</div>
-                      <div class="mockup-subtitle">485 calories burned</div>
-                    </div>
-                  </div>
-                  <div class="mockup-progress-bar">
-                    <div class="mockup-progress-fill"></div>
-                  </div>
-                </div>
-                <div class="mockup-card">
-                  <div class="mockup-card-header">
-                    <div class="mockup-icon">⏱️</div>
-                    <div>
-                      <div class="mockup-title">Active Time</div>
-                      <div class="mockup-subtitle">42 minutes</div>
-                    </div>
-                  </div>
-                  <div class="mockup-progress-bar">
-                    <div class="mockup-progress-fill" style="width: 70%"></div>
-                  </div>
+        
+        <div class="hero-visual fade-in-up delay-200">
+           <!-- Placeholder for app screenshot or abstract visual -->
+           <div class="app-card">
+              <div class="card-header">
+                <div class="card-icon"><img src="icons/weight.svg" alt="" onerror="this.style.display='none'"></div>
+                <div>
+                  <div class="card-title">Today's Workout</div>
+                  <div class="card-sub">Leg Day Hypertrophy</div>
                 </div>
               </div>
-            </div>
-          </div>
+              <div class="card-body">
+                <div class="workout-item">
+                  <div class="w-info">
+                    <span class="w-name">Barbell Squat</span>
+                    <span class="w-sets">4 sets × 8-10 reps</span>
+                  </div>
+                  <div class="w-check-box"></div>
+                </div>
+                <div class="workout-item active">
+                  <div class="w-info">
+                    <span class="w-name">Romanian Deadlift</span>
+                    <span class="w-sets">3 sets × 10-12 reps</span>
+                  </div>
+                  <div class="w-check-box checked">
+                    <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  </div>
+                </div>
+                <div class="workout-item">
+                     <div class="w-info">
+                    <span class="w-name">Leg Press</span>
+                    <span class="w-sets">3 sets × 12-15 reps</span>
+                  </div>
+                  <div class="w-check-box"></div>
+                </div>
+              </div>
+              <div class="card-floating-badge">
+                <span>AI Adjusted: +2.5kg</span>
+              </div>
+           </div>
         </div>
       </div>
     </section>
 
-    <!-- Features Section -->
+    <!-- Features Grid -->
     <section id="features" class="features">
       <div class="container">
-        <div class="section-header scroll-fade-in">
-          <h2 class="section-title">Everything You Need to Crush Your Goals</h2>
-          <p class="section-description">
-            Powerful features designed to keep you motivated and progressing
-          </p>
+        <div class="section-header">
+          <h2 class="section-title">Why Rep Range?</h2>
+          <p class="section-desc">Traditional apps track what you do. Rep Range tells you what to do next.</p>
         </div>
+        
         <div class="features-grid">
-          <div class="feature-card scroll-fade-in">
-            <div class="feature-icon">
-              <img src="icons/brain.svg" alt="Brain" class="icon-svg" />
+          <div class="feature-card">
+            <div class="feature-icon icon-brain">
+                <!-- AI SVG provided by user -->
+                <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>ai</title> <g id="Layer_2" data-name="Layer 2"> <g id="invisible_box" data-name="invisible box"> <rect width="48" height="48" fill="none"></rect> </g> <g id="Q3_icons" data-name="Q3 icons"> <g> <path d="M45.6,18.7,41,14.9V7.5a1,1,0,0,0-.6-.9L30.5,2.1h-.4l-.6.2L24,5.9,18.5,2.2,17.9,2h-.4L7.6,6.6a1,1,0,0,0-.6.9v7.4L2.4,18.7a.8.8,0,0,0-.4.8v9H2a.8.8,0,0,0,.4.8L7,33.1v7.4a1,1,0,0,0,.6.9l9.9,4.5h.4l.6-.2L24,42.1l5.5,3.7.6.2h.4l9.9-4.5a1,1,0,0,0,.6-.9V33.1l4.6-3.8a.8.8,0,0,0,.4-.7V19.4h0A.8.8,0,0,0,45.6,18.7Zm-5.1,6.8H42v1.6l-3.5,2.8-.4.3-.4-.2a1.4,1.4,0,0,0-2,.7,1.5,1.5,0,0,0,.6,2l.7.3h0v5.4l-6.6,3.1-4.2-2.8-.7-.5V25.5H27a1.5,1.5,0,0,0,0-3H25.5V9.7l.7-.5,4.2-2.8L37,9.5v5.4h0l-.7.3a1.5,1.5,0,0,0-.6,2,1.4,1.4,0,0,0,1.3.9l.7-.2.4-.2.4.3L42,20.9v1.6H40.5a1.5,1.5,0,0,0,0-3ZM21,25.5h1.5V38.3l-.7.5-4.2,2.8L11,38.5V33.1h0l.7-.3a1.5,1.5,0,0,0,.6-2,1.4,1.4,0,0,0-2-.7l-.4.2-.4-.3L6,27.1V25.5H7.5a1.5,1.5,0,0,0,0-3H6V20.9l3.5-2.8.4-.3.4.2.7.2a1.4,1.4,0,0,0,1.3-.9,1.5,1.5,0,0,0-.6-2L11,15h0V9.5l6.6-3.1,4.2,2.8.7.5V22.5H21a1.5,1.5,0,0,0,0,3Z"></path> <path d="M13.9,9.9a1.8,1.8,0,0,0,0,2.2l2.6,2.5v2.8l-4,4v5.2l4,4v2.8l-2.6,2.5a1.8,1.8,0,0,0,0,2.2,1.5,1.5,0,0,0,1.1.4,1.5,1.5,0,0,0,1.1-.4l3.4-3.5V29.4l-4-4V22.6l4-4V13.4L16.1,9.9A1.8,1.8,0,0,0,13.9,9.9Z"></path> <path d="M31.5,14.6l2.6-2.5a1.8,1.8,0,0,0,0-2.2,1.8,1.8,0,0,0-2.2,0l-3.4,3.5v5.2l4,4v2.8l-4,4v5.2l3.4,3.5a1.7,1.7,0,0,0,2.2,0,1.8,1.8,0,0,0,0-2.2l-2.6-2.5V30.6l4-4V21.4l-4-4Z"></path> </g> </g> </g> </g></svg>
             </div>
-            <h3 class="feature-title">AI Coaching</h3>
-            <p class="feature-description">
-              Get personalized workout plans that adapt to your progress, goals,
-              and recovery needs.
-            </p>
+            <h3>Adaptive AI Coaching</h3>
+            <p>Algorithms that analyze your performance in real-time to adjust weight, reps, and rest.</p>
           </div>
-          <div class="feature-card scroll-fade-in">
-            <div class="feature-icon">
-              <img src="icons/chart.svg" alt="Chart" class="icon-svg" />
+          
+          <div class="feature-card">
+            <div class="feature-icon icon-chart">
+                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18M18 17V9M13 17V5M8 17v-3"/></svg>
             </div>
-            <h3 class="feature-title">Progress Tracking</h3>
-            <p class="feature-description">
-              Visualize your journey with detailed charts, trends, and insights
-              that show your improvement.
-            </p>
+            <h3>Progressive Overload</h3>
+            <p>Built-in progression logic ensures you never plateau. Focus on lifting; we handle the math.</p>
           </div>
-          <div class="feature-card scroll-fade-in">
-            <div class="feature-icon">
-              <img src="icons/message.svg" alt="Message" class="icon-svg" />
+          
+          <div class="feature-card">
+            <div class="feature-icon icon-lightning">
+                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
             </div>
-            <h3 class="feature-title">AI Assistant</h3>
-            <p class="feature-description">
-              Chat with your fitness coach anytime for form tips, substitutions,
-              and personalized advice.
-            </p>
-          </div>
-          <div class="feature-card scroll-fade-in">
-            <div class="feature-icon">
-              <img src="icons/note.svg" alt="Note" class="icon-svg" />
-            </div>
-            <h3 class="feature-title">Adaptive Programs</h3>
-            <p class="feature-description">
-              Choose from proven 12-week programs that automatically progress as
-              you get stronger.
-            </p>
-          </div>
-          <div class="feature-card scroll-fade-in">
-            <div class="feature-icon">
-              <img src="icons/barbell.svg" alt="Barbell" class="icon-svg" />
-            </div>
-            <h3 class="feature-title">Workout Builder</h3>
-            <p class="feature-description">
-              Create custom workouts, save favorites, and customize sets, reps,
-              and rest periods.
-            </p>
-          </div>
-          <div class="feature-card scroll-fade-in">
-            <div class="feature-icon">
-              <img src="icons/fire.svg" alt="Fire" class="icon-svg" />
-            </div>
-            <h3 class="feature-title">Streak Tracking</h3>
-            <p class="feature-description">
-              Stay motivated with streak counters, daily goals, and achievement
-              badges.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- How It Works Section -->
-    <section id="how-it-works" class="how-it-works">
-      <div class="container">
-        <div class="section-header scroll-fade-in">
-          <h2 class="section-title">How It Works</h2>
-          <p class="section-description">
-            Get started in minutes and see results in weeks
-          </p>
-        </div>
-        <div class="steps">
-          <div class="step-item scroll-fade-in">
-            <div class="step-number">01</div>
-            <div class="step-content">
-              <h3 class="step-title">Set Your Goals</h3>
-              <p class="step-description">
-                Tell us about your fitness goals, experience level, and
-                preferences. Our AI creates a personalized plan just for you.
-              </p>
-            </div>
-          </div>
-          <div class="step-item scroll-fade-in">
-            <div class="step-number">02</div>
-            <div class="step-content">
-              <h3 class="step-title">Start Training</h3>
-              <p class="step-description">
-                Follow your workout plan with real-time guidance. Log exercises,
-                sets, and reps as you go.
-              </p>
-            </div>
-          </div>
-          <div class="step-item scroll-fade-in">
-            <div class="step-number">03</div>
-            <div class="step-content">
-              <h3 class="step-title">Track Progress</h3>
-              <p class="step-description">
-                Watch your strength and endurance improve over time with
-                detailed analytics and insights.
-              </p>
-            </div>
-          </div>
-          <div class="step-item scroll-fade-in">
-            <div class="step-number">04</div>
-            <div class="step-content">
-              <h3 class="step-title">Adapt & Improve</h3>
-              <p class="step-description">
-                Your AI coach automatically adjusts your program based on your
-                performance and recovery.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials">
-      <div class="container">
-        <div class="section-header scroll-fade-in">
-          <h2 class="section-title">Loved by Thousands</h2>
-          <p class="section-description">See what our users are saying</p>
-        </div>
-        <div class="testimonials-grid">
-          <div class="testimonial-card scroll-fade-in">
-            <div class="testimonial-rating">★★★★★</div>
-            <p class="testimonial-text">
-              "Rep Range has completely transformed my fitness journey. The AI
-              coach knows exactly when to push me and when to let me recover."
-            </p>
-            <div class="testimonial-author">
-              <div class="author-avatar">SM</div>
-              <div class="author-info">
-                <div class="author-name">Sarah Martinez</div>
-                <div class="author-role">Fitness Enthusiast</div>
-              </div>
-            </div>
-          </div>
-          <div class="testimonial-card scroll-fade-in">
-            <div class="testimonial-rating">★★★★★</div>
-            <p class="testimonial-text">
-              "I've tried so many fitness apps, but this one actually adapts to
-              my progress. I've gained 15lbs on my bench press in 3 months!"
-            </p>
-            <div class="testimonial-author">
-              <div class="author-avatar">JD</div>
-              <div class="author-info">
-                <div class="author-name">James Davis</div>
-                <div class="author-role">Strength Athlete</div>
-              </div>
-            </div>
-          </div>
-          <div class="testimonial-card scroll-fade-in">
-            <div class="testimonial-rating">★★★★★</div>
-            <p class="testimonial-text">
-              "The AI assistant is incredible. It's like having a personal
-              trainer in my pocket 24/7. Best investment I've made in my
-              health."
-            </p>
-            <div class="testimonial-author">
-              <div class="author-avatar">MJ</div>
-              <div class="author-info">
-                <div class="author-name">Michael Johnson</div>
-                <div class="author-role">Busy Professional</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section class="cta-section">
-      <div class="container">
-        <div class="cta-content scroll-fade-in">
-          <h2 class="cta-title">Ready to Transform Your Fitness?</h2>
-          <p class="cta-description">
-            Join thousands of users who are already crushing their goals with
-            Rep Range
-          </p>
-          <div class="cta-buttons">
-            <button class="btn btn-primary btn-large">Get Started Free</button>
-            <button class="btn btn-secondary btn-large">Learn More</button>
+            <h3>Smart Recovery</h3>
+            <p>Workouts tailored to your recovery state. Push hard when you're ready, deload when you're not.</p>
           </div>
         </div>
       </div>
@@ -322,40 +165,17 @@
 
     <!-- Footer -->
     <footer class="footer">
-      <div class="container">
-        <div class="footer-content">
-          <div class="footer-brand">
-            <div class="logo">
-              <img src="logo.svg" alt="RepRange Logo" class="logo-img" />
-            </div>
-            <p class="footer-description">
-              Your AI-powered fitness coach for personalized training and
-              progress tracking.
-            </p>
+      <div class="container footer-content">
+        <div class="footer-left">
+          <div class="logo">
+             <img src="logo.svg" alt="RepRange" class="logo-img-sm" />
           </div>
-          <div class="footer-links">
-            <div class="footer-column">
-              <h4 class="footer-title">Product</h4>
-              <a href="#features">Features</a>
-              <a href="#pricing">Pricing</a>
-              <a href="#how-it-works">How It Works</a>
-            </div>
-            <div class="footer-column">
-              <h4 class="footer-title">Company</h4>
-              <a href="#">About</a>
-              <a href="#">Blog</a>
-              <a href="#">Careers</a>
-            </div>
-            <div class="footer-column">
-              <h4 class="footer-title">Support</h4>
-              <a href="#">Help Center</a>
-              <a href="#">Contact</a>
-              <a href="#">Privacy</a>
-            </div>
-          </div>
+          <p>&copy; 2024 RepRange. All Rights Reserved.</p>
         </div>
-        <div class="footer-bottom">
-          <p>&copy; 2024 RepRange. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="mailto:hello@reprange.com">Contact</a>
         </div>
       </div>
     </footer>
